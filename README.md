@@ -29,6 +29,9 @@ cd www && python -m http.server 8080
 
 Open http://localhost:8080.
 
+Live at https://blackjack.brettfisher.dev (Cloudflare Workers static assets, config in
+`wrangler.jsonc`). Deploy with `./build.sh && npx wrangler deploy`.
+
 ## Credits
 
 - All art comes from https://ivoryred.itch.io/pixel-poker-cards

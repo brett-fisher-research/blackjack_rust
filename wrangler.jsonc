@@ -1,0 +1,12 @@
+// Cloudflare Workers config: serves the web build in www/ at blackjack.brettfisher.dev.
+// Build with ./build.sh, then deploy with `npx wrangler deploy`.
+{
+  "name": "blackjack",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "www",
+    "not_found_handling": "404-page"
+  },
+  "routes": [{ "pattern": "blackjack.brettfisher.dev", "custom_domain": true }],
+  "workers_dev": true
+}
